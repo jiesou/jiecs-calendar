@@ -1,0 +1,33 @@
+{
+  DrawerLayout;
+  layout_width="fill";
+  background="#FFFFFF";
+  layout_height="fill";
+  id="drawerLayout";
+  {
+    AbsoluteLayout;
+    layout_width="35dp";
+    {
+      TextView;
+      RotationX="0dp";
+      textSize="20dp";
+      id="title";
+      paddingLeft="15dp";
+      layout_width="35dp";
+      text="时间设置";
+      textColor="0xFF000000";
+      paddingTop="60dp";
+    };
+    {
+      DatePicker;
+      TranslationY="80dp";
+      TranslationX="50dp";
+      id="date";
+    };
+    {
+      TimePicker;
+      TranslationY="515dp";
+      id="time";
+    };
+  };
+};
