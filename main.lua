@@ -60,12 +60,13 @@ function Refresh()
   写入文件(file,'STRname1"事件"time1"0"name2"事件"time2"0"name3"事件"time3"0"name4"事件"time4"0"END')
   content='STRname1"事件"time1"0"name2"事件"time2"0"name3"事件"time3"0"name4"事件"time4"0"END'
  end
-
+ card=0
  name1=content:match('name1"(.-)"')--名字1
  name1View.Text=name1
  time1=content:match('time1"(.-)"')--时间1
  if time1=='0' then
   card1.setVisibility(View.GONE)
+  card=card+1
   else
   card1.setVisibility(View.VISIBLE)
   time1View.Text=counttime(time1)
@@ -76,6 +77,7 @@ function Refresh()
  time2=content:match('time2"(.-)"')--时间2
  if time2=='0' then
   card2.setVisibility(View.GONE)
+  card=card+1
   else
   card2.setVisibility(View.VISIBLE)
   time2View.Text=counttime(time2)
@@ -86,6 +88,7 @@ function Refresh()
  time3=content:match('time3"(.-)"')--时间3
  if time3=='0' then
   card3.setVisibility(View.GONE)
+  card=card+1
   else
   card3.setVisibility(View.VISIBLE)
   time3View.Text=counttime(time3)
@@ -96,11 +99,12 @@ function Refresh()
  time4=content:match('time4"(.-)"')--时间4
  if time4=='0' then
   card4.setVisibility(View.GONE)
+  card=card+1
   else
   card4.setVisibility(View.VISIBLE)
   time4View.Text=counttime(time4)
  end
-
+ if card>3 then null.setVisibility(View.VISIBLE) else null.setVisibility(View.GONE) end
  task(1000,function()
   Refresh()
  end)
