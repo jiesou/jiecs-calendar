@@ -45,7 +45,7 @@
     TranslationX="10dp";
     singleLine=true;
     layout_width="250dp";
-    Hint="事项";
+    Hint="事件";
     id="name1View";
     TranslationY="50dp";
    };
@@ -84,7 +84,7 @@
     TranslationX="10dp";
     singleLine=true;
     layout_width="250dp";
-    Hint="事项";
+    Hint="事件";
     id="name2View";
     TranslationY="50dp";
    };
@@ -123,7 +123,7 @@
     TranslationX="10dp";
     singleLine=true;
     layout_width="250dp";
-    Hint="事项";
+    Hint="事件";
     id="name3View";
     TranslationY="50dp";
    };
@@ -162,7 +162,7 @@
     TranslationX="10dp";
     singleLine=true;
     layout_width="250dp";
-    Hint="事项";
+    Hint="事件";
     id="name4View";
     TranslationY="50dp";
    };
