@@ -57,8 +57,8 @@ function Refresh()
  if File(file).isFile() then
   content=io.open(file):read("*a")
   else
-  写入文件(file,'STRname1"事项"time1"0"name2"事项"time2"0"name3"事项"time3"0"name4"事项"time4"0"END')
-  content='STRname1"事项"time1"0"name2"事项"time2"0"name3"事项"time3"0"name4"事项"time4"0"END'
+  写入文件(file,'STRname1"事件"time1"0"name2"事件"time2"0"name3"事件"time3"0"name4"事件"time4"0"END')
+  content='STRname1"事件"time1"0"name2"事件"time2"0"name3"事件"time3"0"name4"事件"time4"0"END'
  end
 
  name1=content:match('name1"(.-)"')--名字1
