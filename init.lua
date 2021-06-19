@@ -1,9 +1,9 @@
 --名称
 appname="日程倒计时"
 --版本号
-appver="1.0"
+appver="1.0.1"
 --版本
-appcode="1"
+appcode="2"
 --SDK
 appsdk="15"
 --关联
