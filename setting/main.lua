@@ -164,34 +164,34 @@ c1.onClick=function()
  clean(1)
  local front1=contentn:match('(.+)'..q)
  local behind1=contentn:match(b..'(.+)')
- local contentn=front1..q..'事件"time1"0'..b..behind1
+ local contentn=front1..q..'"time1"0'..b..behind1
  写入文件(file,contentn)
- name1View.Text='事件'
+ name1View.Text=''
 end
 c2.onClick=function()
  contentn=content
  clean(2)
  local front2=contentn:match('(.+)'..q)
  local behind2=contentn:match(b..'(.+)')
- local contentn=front2..q..'事件"time2"0'..b..behind2
+ local contentn=front2..q..'"time2"0'..b..behind2
  写入文件(file,contentn)
- name2View.Text='事件'
+ name2View.Text=''
 end
 c3.onClick=function()
  contentn=content
  clean(3)
  local front3=contentn:match('(.+)'..q)
  local behind3=contentn:match(b..'(.+)')
- local contentn=front3..q..'事件"time3"0'..b..behind3
+ local contentn=front3..q..'"time3"0'..b..behind3
  写入文件(file,contentn)
- name3View.Text='事件'
+ name3View.Text=''
 end
 c4.onClick=function()
  contentn=content
  clean(4)
  local front4=contentn:match('(.+)'..q)
  local behind4=contentn:match(b..'(.+)')
- local contentn=front4..q..'事件"time4"0'..b..behind4
+ local contentn=front4..q..'"time4"0'..b..behind4
  写入文件(file,contentn)
- name4View.Text='事件'
+ name4View.Text=''
 end
